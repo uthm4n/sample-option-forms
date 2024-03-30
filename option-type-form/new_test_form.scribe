@@ -1,7 +1,6 @@
 resource "option-type-form" "new_test_form" {
   code = "new_test_form"
   name = "New Test Form"
-  uuid = "ad208178-b5fb-453f-8c6c-52baabcbcf22"
   description = "A simple test form"
   field-groups = [
     {
@@ -13,7 +12,6 @@ resource "option-type-form" "new_test_form" {
         {
           code = "layout_selector"
           name = "Layout"
-          uuid = "828d966b-9f6c-46c4-be79-0849778902fc"
           config = {
             addonPosition = ""
             cloudField = "cloud_selector"
@@ -36,7 +34,6 @@ resource "option-type-form" "new_test_form" {
         {
           code = "plan_selector"
           name = "Plan"
-          uuid = "4436a991-a40b-4c1c-8761-2b84c690803e"
           config = {
             cloudField = "cloud_selector"
             cloudFieldType = "field"
@@ -73,7 +70,6 @@ resource "option-type-form" "new_test_form" {
         {
           code = "network_selector"
           name = "Network"
-          uuid = "a30de781-f19d-4ffe-a277-1fdd44ad12e4"
           config = {
             addon = ""
             addonPosition = "right"
@@ -107,7 +103,6 @@ resource "option-type-form" "new_test_form" {
         {
           code = "security_group_selector"
           name = "Security Group"
-          uuid = "11a64e31-0f34-4026-9169-8603c48da750"
           config = {
             addon = ""
             addonPosition = ""
@@ -133,7 +128,6 @@ resource "option-type-form" "new_test_form" {
     {
       code = "group_selector"
       name = "Group"
-      uuid = "6264f1a7-1e97-46cc-aa57-9a501858ea03"
       config = { addon = "", addonPosition = "" }
       defaultValue = "3"
       fieldContext = "config.customOptions"
@@ -146,7 +140,6 @@ resource "option-type-form" "new_test_form" {
     {
       code = "cloud_selector"
       name = "Cloud"
-      uuid = "7b218be3-8982-42e6-80fd-972fd6cbefcd"
       config = {
         addon = ""
         addonPosition = ""
@@ -171,7 +164,6 @@ resource "option-type-form" "new_test_form" {
     {
       code = "resourcePool_selector"
       name = "Resource Pool"
-      uuid = "fa9ae8e2-b4e8-46de-a997-543203d414da"
       config = {
         addonPosition = ""
         cloudField = "cloud_selector"
