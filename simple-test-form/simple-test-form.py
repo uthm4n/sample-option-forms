@@ -188,7 +188,7 @@ payload = {"optionTypeForm": {
                             "poolField": "resourcePool_selector",
                             "addon": "",
                             "addonPosition": "",
-                            "defaultValue": "{}",
+                            "defaultValue": "[]",
                             "groupId": "",
                             "groupFieldType": "field",
                             "layoutId": "",
