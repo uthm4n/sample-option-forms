@@ -4,7 +4,7 @@ resource "option-type-form" "new_test_form" {
   description = "A simple test form"
   field-groups = [
     {
-      code = "1facbc22-2a4a-44fd-b03f-221896f99ae9"
+      code = "step-2"
       name = "Layout + Plan selection"
       collapsible = false
       defaultCollapsed = false
@@ -62,7 +62,7 @@ resource "option-type-form" "new_test_form" {
       ]
     },
     {
-      code = "fc128c25-cbb6-4798-a72e-7fed8c4cdf7b"
+      code = "step-3"
       name = "Network Configuration"
       collapsible = false
       defaultCollapsed = false
