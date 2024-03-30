@@ -462,6 +462,6 @@ headers = {
     "Authorization": "Bearer <MORPHEUS_API_TOKEN>"                                      # change me :)
 }
 
-response = requests.request("POST", url, json=payload, headers=headers, params=querystring)
+response = requests.request("POST", url, json=payload, headers=headers, params=querystring, verify=False)
 
 print(response.text)
