@@ -1,5 +1,3 @@
-# sample-option-forms
-
 # Setup
 1. `git clone https://github.com:uthm4n/sample-option-forms.git && cd $_`
 2. `cd` into the appropriate directory 
