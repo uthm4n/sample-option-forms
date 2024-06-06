@@ -1,6 +1,7 @@
 resource "option-type-form" "new_test_form" {
   code = "new_test_form"
   name = "New Test Form"
+  uuid = "3a258bd7-a937-4030-a1a8-da88de04d42a"
   description = "A simple test form"
   field-groups = [
     {
@@ -12,7 +13,9 @@ resource "option-type-form" "new_test_form" {
         {
           code = "layout_selector"
           name = "Layout"
+          uuid = "97fc6039-5633-4f33-86b2-325d8d41f245"
           config = {
+            addon = ""
             addonPosition = ""
             cloudField = "cloud_selector"
             cloudFieldType = "field"
@@ -20,7 +23,7 @@ resource "option-type-form" "new_test_form" {
             groupField = "group_selector"
             groupFieldType = "field"
             groupId = ""
-            instanceTypeCode = "ubuntu"
+            instanceTypeCode = "ueqbal-windows"
             instanceTypeFieldCode = ""
             instanceTypeFieldType = "value"
           }
@@ -34,6 +37,7 @@ resource "option-type-form" "new_test_form" {
         {
           code = "plan_selector"
           name = "Plan"
+          uuid = "2efe418b-42f4-420d-a5c6-58a4a2c574c7"
           config = {
             cloudField = "cloud_selector"
             cloudFieldType = "field"
@@ -62,6 +66,49 @@ resource "option-type-form" "new_test_form" {
       ]
     },
     {
+      code = "87c9e32f-831b-4cc5-81c5-34fe737cec95"
+      name = "Storage configuration"
+      collapsible = false
+      defaultCollapsed = false
+      options = [
+        {
+          code = "disk_selector"
+          name = "Disk"
+          uuid = "f481e5c4-c2be-4a75-af7a-8195ac30ed57"
+          config = {
+            addon = ""
+            addonPosition = ""
+            cloudField = "cloud_selector"
+            cloudFieldType = "field"
+            cloudId = ""
+            defaultValue = "[]"
+            enableDatastoreSelection = false
+            enableDiskTypeSelection = false
+            enableStorageTypeSelection = true
+            groupField = "group_selector"
+            groupFieldType = "field"
+            groupId = ""
+            layoutField = "layout_selector"
+            layoutFieldType = "field"
+            layoutId = ""
+            planField = "plan_selector"
+            planFieldType = "field"
+            planId = ""
+            poolField = ""
+            poolFieldType = "field"
+            poolId = ""
+          }
+          defaultValue = "\"\""
+          fieldContext = "config.customOptions"
+          fieldLabel = "DisK:"
+          fieldName = "diskSelector"
+          formField = true
+          refCode = "disk_selector"
+          type = "diskManager"
+        }
+      ]
+    },
+    {
       code = "step-3"
       name = "Network Configuration"
       collapsible = false
@@ -70,6 +117,7 @@ resource "option-type-form" "new_test_form" {
         {
           code = "network_selector"
           name = "Network"
+          uuid = "43dd50d3-3c23-4cd5-9fcd-933a52a97b95"
           config = {
             addon = ""
             addonPosition = "right"
@@ -77,7 +125,7 @@ resource "option-type-form" "new_test_form" {
             cloudFieldType = "field"
             cloudId = ""
             defaultValue = "[]"
-            enableIPModeSelection = false
+            enableIPModeSelection = true
             groupField = "group_selector"
             groupFieldType = "field"
             groupId = ""
@@ -90,7 +138,7 @@ resource "option-type-form" "new_test_form" {
             poolField = "resourcePool_selector"
             poolFieldType = "field"
             poolId = ""
-            showNetworkTypeSelection = false
+            showNetworkTypeSelection = true
           }
           defaultValue = "\"\""
           fieldContext = "config.customOptions"
@@ -103,6 +151,7 @@ resource "option-type-form" "new_test_form" {
         {
           code = "security_group_selector"
           name = "Security Group"
+          uuid = "42307f20-8fe7-4ab8-8916-bf4b6d4e3356"
           config = {
             addon = ""
             addonPosition = ""
@@ -128,8 +177,9 @@ resource "option-type-form" "new_test_form" {
     {
       code = "group_selector"
       name = "Group"
+      uuid = "54ba3bfe-c799-4ea4-9def-5351605eeb51"
       config = { addon = "", addonPosition = "" }
-      defaultValue = "3"
+      defaultValue = "1"
       fieldContext = "config.customOptions"
       fieldLabel = "Group:"
       fieldName = "group_selection_"
@@ -140,6 +190,7 @@ resource "option-type-form" "new_test_form" {
     {
       code = "cloud_selector"
       name = "Cloud"
+      uuid = "3514b151-894d-4f0f-aee9-b94a51fe8c8d"
       config = {
         addon = ""
         addonPosition = ""
@@ -164,6 +215,7 @@ resource "option-type-form" "new_test_form" {
     {
       code = "resourcePool_selector"
       name = "Resource Pool"
+      uuid = "48ed8767-9202-4cac-97f2-d1cabf5bf7ac"
       config = {
         addonPosition = ""
         cloudField = "cloud_selector"
@@ -179,7 +231,6 @@ resource "option-type-form" "new_test_form" {
         planFieldType = "field"
         planId = ""
       }
-      defaultValue = "\"\""
       displayOrder = 2
       fieldContext = "config.customOptions"
       fieldLabel = "Resource Pool:"
@@ -187,6 +238,31 @@ resource "option-type-form" "new_test_form" {
       formField = true
       refCode = "resourcePool_selector"
       type = "resourcePool"
+    },
+    {
+      code = "b43561f3-1677-4367-85e6-11fbbe671127"
+      name = "b43561f3-1677-4367-85e6-11fbbe671127"
+      uuid = "e90201e0-8abb-48a1-9b77-088bc607d418"
+      config = {
+        addon = ""
+        addonPosition = ""
+        cloudField = "cloud_selector"
+        cloudFieldType = "field"
+        cloudId = ""
+        groupField = "group_selector"
+        groupFieldType = "field"
+        groupId = ""
+        planField = "plan_selector"
+        planFieldType = "field"
+        planId = ""
+      }
+      defaultValue = "0"
+      displayOrder = 3
+      fieldContext = "config.customOptions"
+      fieldLabel = "Folder:"
+      fieldName = "folderSelector"
+      formField = true
+      type = "vmwFolders"
     }
   ]
 }
