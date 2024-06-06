@@ -14,8 +14,8 @@ payload = {"optionTypeForm": {
     "labels": "",
     "fieldGroups": [
         {
-            "name": "Layout + Plan selection",
-            "code": "step-2",
+            "name": "Layout, Plan, and Virtual Image Configuration",
+            "code": "step-1",
             "description": None,
             "localizedName": None,
             "collapsible": False,
@@ -145,7 +145,63 @@ payload = {"optionTypeForm": {
                     "isLocked": False,
                     "minVal": None,
                     "maxVal": None
-                }
+                },
+                {
+            "name": "d326a1d4-ee83-49bc-b5eb-7a50f8b45b1b",
+            "description": None,
+            "code": "d326a1d4-ee83-49bc-b5eb-7a50f8b45b1b",
+            "excludeFromSearch": False,
+            "fieldName": "virtualImageSelector",
+            "fieldLabel": "Virtual Image:",
+            "fieldCode": None,
+            "refCode": "d326a1d4-ee83-49bc-b5eb-7a50f8b45b1b",
+            "fieldContext": "config.customOptions",
+            "fieldGroup": None,
+            "fieldClass": None,
+            "fieldAddOn": None,
+            "fieldComponent": None,
+            "fieldInput": None,
+            "placeHolder": None,
+            "verifyPattern": None,
+            "helpBlock": None,
+            "helpBlockFieldCode": None,
+            "defaultValue": None,
+            "optionSource": None,
+            "optionSourceType": None,
+            "optionList": None,
+            "type": "virtual-image",
+            "advanced": False,
+            "required": False,
+            "exportMeta": False,
+            "editable": False,
+            "creatable": True,
+            "config": {
+              "cloudField": "cloud_selector",
+              "addon": "",
+              "addonPosition": "",
+              "cloudId": "",
+              "cloudFieldType": "cloud"
+            },
+            "displayOrder": 2,
+            "wrapperClass": None,
+            "enabled": True,
+            "noBlank": False,
+            "dependsOnCode": None,
+            "visibleOnCode": None,
+            "requireOnCode": None,
+            "contextualDefault": False,
+            "displayValueOnDetails": False,
+            "showOnCreate": True,
+            "showOnEdit": True,
+            "localCredential": False,
+            "formField": True,
+            "isHidden": False,
+            "isLocked": False,
+            "minVal": None,
+            "maxVal": None
+          }
+        ]
+      }
             ]
         },
         {
